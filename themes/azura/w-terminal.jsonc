@@ -1,0 +1,23 @@
+{
+  "name": "Moegi Black Zen",
+  "background": "#050505",
+  "foreground": "#707080",
+  "selectionBackground": "#292929",
+  "cursorColor": "#ff8787",
+  "black": "#292929",
+  "red": "#ad8686",
+  "green": "#859891",
+  "yellow": "#b3aa8f",
+  "blue": "#7789a3",
+  "purple": "#8e7a93",
+  "cyan": "#698a8e",
+  "white": "#adadad",
+  "brightBlack": "#393939",
+  "brightRed": "#bd9696",
+  "brightGreen": "#95a8a1",
+  "brightYellow": "#c3ba9f",
+  "brightBlue": "#8799b3",
+  "brightPurple": "#9e8aa3",
+  "brightCyan": "#799a9e",
+  "brightWhite": "#bdbdbd"
+}
