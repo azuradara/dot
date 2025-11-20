@@ -1,0 +1,42 @@
+[window]
+padding.x = 8
+padding.y = 8
+
+[font]
+normal.family = "Berkeley Mono"
+size = 12
+
+[terminal]
+shell = "/usr/sbin/zsh"
+
+[colors.primary]
+background = "#050505"
+foreground = "#c0c0c0"
+
+[colors.cursor]
+text = "#050505"
+cursor = "#ff8787"
+
+[colors.selection]
+text = "CellForeground"
+background = "#292929"
+
+[colors.normal]
+black = "#333333"
+red = "#e47474"
+green = "#66b395"
+yellow = "#e2c97e"
+blue = "#7098d4"
+magenta = "#b290ba"
+cyan = "#6ab8c0"
+white = "#dddddd"
+
+[colors.bright]
+black = "#666666"
+red = "#f48484"
+green = "#76c3a5"
+yellow = "#f2d98e"
+blue = "#80a8e4"
+magenta = "#c2a0ca"
+cyan = "#7ac8d0"
+white = "#f6f6f6"
