@@ -4,7 +4,7 @@ padding.y = 8
 
 [font]
 normal.family = "Berkeley Mono"
-size = 12
+size = 11
 
 [terminal]
 shell = "/usr/sbin/zsh"

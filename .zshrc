@@ -46,6 +46,14 @@ zstyle ':completion:*' menu no
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
+alias ssh="TERM=xterm-256color $(which ssh)"
 
-bindkey "^[[1;5C" forward-word
+bindkey "^[[1;9D" beginning-of-line
+bindkey "^[[1;9C" end-of-line
 bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+bindkey "^[[3;10~" backward-kill-word
+bindkey "^[[3;3~" kill-word
+
+# PATHS
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"

@@ -1,0 +1,109 @@
+* {
+	bg: 		#000000;
+	bg2: 		#0d0d0d;
+	
+	fg: 		#b4b4b4;
+	fg-selected: 	#eeeeee;
+	
+	transparent: 	rgba(0,0,0,0);
+	black:		rgba(0,0,0,0.8);
+
+	red: 		#ff8787;
+	green: 		#66b395;
+	yellow: 	#e7d38f;
+	blue: 		#7098d4;
+	magenta:	#ed9cc2;
+	cyan: 		#5fb5be;
+}
+
+configuration {
+	display-drun: "󰍉";
+	display-run: "󰍉";
+	display-window: "󰍉";
+	drun-display-format: "{name}";
+	icon-theme: "Flatery";
+	fixed-num-lines: true;
+	font: "Berkeley Mono 12";
+}
+
+scrollbar {
+	width: 0;
+	handle-width: 0;
+}
+
+window {
+	fullscreen: true;
+	background-color: black/80%;
+	border: 0;
+	padding: 38% 40% 25% 40%;
+	children: [mainbox];
+}
+
+mainbox {
+	y-offset: 0%;
+	location: center;
+	anchor: north;
+	spacing: 3;
+	background-color: @transparent;
+	border: 0;
+	transparency: "real";
+	children: [inputbar, listview];
+}
+
+inputbar {
+	background-color: @bg;
+	text-color: @fg;
+	children: [prompt, entry];
+}
+
+prompt {
+	background-color: @transparent;
+	text-color: @fg-selected;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border: 0;
+}
+
+entry {
+	background-color: @transparent;
+	text-color: @fg;
+	placeholder: "";
+	padding: 0.5em 0 0.5em 0;
+	border: 0;
+}
+
+listview {
+	background-color: @transparent;
+	cycle: false;
+	dynamic: true;
+	padding: 0 0 0 0;
+	border: 0;
+	columns: 1;
+  lines: 5;
+	spacing: 0;
+	children: [element];
+}
+
+element {
+	padding: 0px;
+	border: 0;
+}
+
+element selected {
+	background-color: @transparent;
+	text-color: @fg-selected;
+	border: 0;
+}
+
+element-text {
+	background-color: @bg	;
+	text-color: @fg;
+	padding: 0.25em 0.2em 0.25em 0.2em;
+	border: 0;
+}
+
+element-text selected {
+	background-color: @bg2;
+	text-color: @fg-selected;
+	padding: 0.2em 0.2em 0.2em 0.2em;
+	border: 0;
+}
